@@ -7,6 +7,7 @@ import Footer from "../footer/Footer"; */
 const AppLayout = () => {
   return (
     <div className="app">
+      {/* <Header /> */}
       {/* <Navigation /> */}
       <div className="main">
         <Outlet />
