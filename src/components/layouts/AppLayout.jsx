@@ -1,6 +1,7 @@
 import { Outlet, ScrollRestoration } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Navigation from "../navigation/Navigation";
 
 /* import Navigation from "../navigation/Navigation";
 import Footer from "../footer/Footer"; */
@@ -9,7 +10,7 @@ const AppLayout = () => {
   return (
     <div className="app">
 
-      {/* <Navigation /> */}
+      <Navigation />
       <div className="main">
         <Outlet />
         <ScrollRestoration />
