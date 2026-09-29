@@ -1,0 +1,23 @@
+.button {
+    width: 80px;
+    height: 30px;
+    background-color: #7C632F;
+    border: none;
+        @media(min-width: 1440px) {
+            width: 270px;
+            height: 92px;
+    }
+}
+
+.buttonText {
+    color: white;
+    font-size: 10px;
+        @media(min-width: 1440px) {
+            font-size: 24px;
+    }
+}
+
+.transparent {
+    background-color: transparent;
+    border: 1px solid white;
+}

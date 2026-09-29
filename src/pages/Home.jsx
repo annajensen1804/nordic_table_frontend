@@ -6,6 +6,7 @@ const Home = () => {
         kicker="— VELKOMST"
         title="Smag det nordiske"
         leadtext="Nordic Table er et sted, hvor sæsonens bedste råvarer forvandles til uforglemmelige oplevelser. Ro, kvalitet og hygge i hvert eneste måltid."
+        showButtons
       />
     );
 }
