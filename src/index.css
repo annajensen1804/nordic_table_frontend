@@ -23,7 +23,6 @@ body {
 .main {
   flex: 1;
   display: flex;
-  text-align: center;
 }
 
 h1, h2, h3, h4, h5 {
