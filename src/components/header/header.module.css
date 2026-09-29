@@ -63,3 +63,8 @@
             line-height: 50px;
     }
 }
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
