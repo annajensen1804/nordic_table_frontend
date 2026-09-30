@@ -8,6 +8,7 @@ import Loading from "./components/loading/Loading";
 import Home from "./pages/Home";
 import ErrorElement from "./components/feedbackElements/ErrorElement";
 import { menuLoader } from "./loaders/DataLoaders";
+import Menu from "./pages/Menu";
 
 
 const routes = createBrowserRouter(
@@ -20,15 +21,18 @@ const routes = createBrowserRouter(
           loader={menuLoader}
           errorElement={<ErrorElement />}
         />
-        
+
+        <Route
+          path="menu"
+          element={<Menu />}
+          loader={menuLoader}
+          errorElement={<ErrorElement />}
+        />
 
         {/* <Route path="*" element={<NotFound />} /> */}
       </Route>
-
-      
     </Route>,
   ),
- 
 );
 
 export default routes;

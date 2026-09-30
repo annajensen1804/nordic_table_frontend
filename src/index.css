@@ -50,7 +50,7 @@ p {
     font-style: light;
     font-size: 32px;
      @media(min-width: 1440px) {
-            font-size: 96px;
+            font-size: 64px;
             line-height: 105px;
     }
 }
@@ -69,4 +69,8 @@ p {
 
 .gold {
   color: #7C632F
+}
+
+li {
+  list-style: none;
 }
