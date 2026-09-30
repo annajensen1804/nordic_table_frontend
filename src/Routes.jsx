@@ -7,6 +7,7 @@ import AppLayout from "./components/layouts/AppLayout";
 import Loading from "./components/loading/Loading";
 import Home from "./pages/Home";
 import ErrorElement from "./components/feedbackElements/ErrorElement";
+import { menuLoader } from "./loaders/DataLoaders";
 
 
 const routes = createBrowserRouter(
@@ -16,7 +17,7 @@ const routes = createBrowserRouter(
         <Route
           index
           element={<Home />}
-          /* loader={homeLoader} */
+          loader={menuLoader}
           errorElement={<ErrorElement />}
         />
         
