@@ -1,0 +1,60 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7F5F2;
+    padding: 60px 20px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.dishesContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+    @media(min-width: 1440px) {
+            max-width: 1200px;
+            flex-direction: row;
+    }
+}
+
+.dishCard {
+    width: 344px;
+    height: 100%;
+    position: relative;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    background-color: #7C632F;
+    padding: 5px 8px;
+}
+
+.cardText {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    padding: 10px;
+}
+
+.price {
+    font-family: "Cormorant Garamond", serif
+}
