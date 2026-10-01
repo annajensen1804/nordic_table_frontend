@@ -44,7 +44,7 @@ const Navigation = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink onClick={closeMenu} to="/reservation">
+          <NavLink onClick={closeMenu} to="/booking">
             Book bord
           </NavLink>
         </li>
