@@ -10,6 +10,7 @@ import ErrorElement from "./components/feedbackElements/ErrorElement";
 import { menuLoader } from "./loaders/DataLoaders";
 import Menu from "./pages/Menu";
 import Booking from "./pages/Booking";
+import Backoffice from "./pages/backoffice/Backoffice";
 
 
 const routes = createBrowserRouter(
@@ -33,6 +34,13 @@ const routes = createBrowserRouter(
         <Route
           path="booking"
           element={<Booking />}
+          errorElement={<ErrorElement />}
+        />
+
+        <Route
+          path="backoffice"
+          element={<Backoffice />}
+          loader={menuLoader}
           errorElement={<ErrorElement />}
         />
 

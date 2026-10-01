@@ -38,3 +38,21 @@
 }
 }
 
+.delete {
+    background-color: red;
+    width: 100px;
+    height: 50px;
+}
+
+.edit {
+    background-color: green;
+    width: 100px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.add {
+    background-color: darkgreen;
+    width: 150px;
+    height: 50px;
+}
