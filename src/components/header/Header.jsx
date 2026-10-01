@@ -21,7 +21,7 @@ const Header = ({ kicker, title, leadtext, showButtons = false, onClick }) => {
             <Button
               buttonText="BOOK BORD"
               variant="default"
-              onClick={() => navigate("/reservation")}
+              onClick={() => navigate("/booking")}
             />
             <Button
               buttonText="SE MENUEN"
