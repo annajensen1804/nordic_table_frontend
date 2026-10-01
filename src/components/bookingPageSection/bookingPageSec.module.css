@@ -1,0 +1,26 @@
+.container {
+    background-color: #F7F5F2;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+
+    @media(min-width: 1440px) {
+        flex-direction: row;
+    }
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card {
+    background-color: #F2EDE5;
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+    border-left: 3px solid #916B1C;
+}

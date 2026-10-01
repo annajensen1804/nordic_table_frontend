@@ -9,6 +9,7 @@ import Home from "./pages/Home";
 import ErrorElement from "./components/feedbackElements/ErrorElement";
 import { menuLoader } from "./loaders/DataLoaders";
 import Menu from "./pages/Menu";
+import Booking from "./pages/Booking";
 
 
 const routes = createBrowserRouter(
@@ -26,6 +27,12 @@ const routes = createBrowserRouter(
           path="menu"
           element={<Menu />}
           loader={menuLoader}
+          errorElement={<ErrorElement />}
+        />
+
+        <Route
+          path="booking"
+          element={<Booking />}
           errorElement={<ErrorElement />}
         />
 
