@@ -74,3 +74,9 @@ p {
 li {
   list-style: none;
 }
+
+a {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  color: black
+}

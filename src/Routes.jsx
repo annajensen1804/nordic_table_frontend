@@ -11,6 +11,9 @@ import { menuLoader } from "./loaders/DataLoaders";
 import Menu from "./pages/Menu";
 import Booking from "./pages/Booking";
 import Backoffice from "./pages/backoffice/Backoffice";
+import Login from "./pages/login/Login";
+import ProtectedRoute from "./components/ProtectedRoute";
+import BackofficeLayout from "./components/layouts/BackofficeLayout";
 
 
 const routes = createBrowserRouter(
@@ -38,13 +41,23 @@ const routes = createBrowserRouter(
         />
 
         <Route
-          path="backoffice"
-          element={<Backoffice />}
-          loader={menuLoader}
+          path="login"
+          element={<Login />}
           errorElement={<ErrorElement />}
         />
 
         {/* <Route path="*" element={<NotFound />} /> */}
+      </Route>
+
+      <Route element={<BackofficeLayout />} hydrateFallbackElement={<Loading />}>
+        <Route element={<ProtectedRoute />}>
+          <Route
+            path="backoffice"
+            element={<Backoffice />}
+            loader={menuLoader}
+            errorElement={<ErrorElement />}
+          />
+        </Route>
       </Route>
     </Route>,
   ),

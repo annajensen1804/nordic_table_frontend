@@ -8,6 +8,7 @@ import DishForm from "./forms/DishForm";
 import DishEditForm from "./forms/DishEditForm";
 import ConfirmationForm from "./forms/ConfirmationForm";
 import { useCrud } from "../../hooks/useCrud";
+import Header from "../../components/header/Header";
 
 const Backoffice = () => {
     const { remove } = useCrud();
@@ -36,6 +37,7 @@ const Backoffice = () => {
 
   return (
     <article className={styles.backoffice}>
+      
       <h1>BACKOFFICE</h1>
       <h2>Retter</h2>
 

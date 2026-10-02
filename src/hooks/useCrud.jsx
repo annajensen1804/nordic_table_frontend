@@ -7,8 +7,8 @@ const useCrud = () => {
 
   const revalidator = useRevalidator(); 
   
-  /* const { token } = useAuthContext(); */
- /*  const authHeader = token ? { Authorization: `Bearer ${token}` } : {}; */
+  const { token } = useAuthContext();
+ const authHeader = token ? { Authorization: `Bearer ${token}` } : {};
 
   const create = async (endpoint, formData) => {
     try {
@@ -35,7 +35,7 @@ const remove = async (endpoint, id) => {
   try {
     const res = await fetch(`${serverPath}/${endpoint}/${id}`, {
       method: "DELETE",
-      /* headers: authHeader, */
+      headers: authHeader,
     });
     
     if (!res.ok) {
@@ -56,7 +56,7 @@ const update = async (endpoint, formData) => {
   try {
     const res = await fetch(`${serverPath}/${endpoint}`, {
       method: "PUT",
-      /* headers: authHeader, */
+      headers: authHeader,
       body: formData,
     })
 
