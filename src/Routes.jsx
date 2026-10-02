@@ -14,6 +14,7 @@ import Backoffice from "./pages/backoffice/Backoffice";
 import Login from "./pages/login/Login";
 import ProtectedRoute from "./components/ProtectedRoute";
 import BackofficeLayout from "./components/layouts/BackofficeLayout";
+import NotFound from "./pages/404";
 
 
 const routes = createBrowserRouter(
@@ -46,7 +47,7 @@ const routes = createBrowserRouter(
           errorElement={<ErrorElement />}
         />
 
-        {/* <Route path="*" element={<NotFound />} /> */}
+        <Route path="*" element={<NotFound />} />
       </Route>
 
       <Route element={<BackofficeLayout />} hydrateFallbackElement={<Loading />}>
