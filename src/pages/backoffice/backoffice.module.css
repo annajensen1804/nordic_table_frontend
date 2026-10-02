@@ -4,6 +4,7 @@
     gap: 20px;
     justify-content: center;
     align-items: center;
+    padding: 60px 20px;
 
     img {
     display: block;
@@ -11,6 +12,10 @@
     height: auto;
     margin-top: 10px;
     border-radius: 4px;
+  }
+
+  h1 {
+    padding-top: 50px;
   }
 }
 

@@ -25,14 +25,8 @@ export const AuthProvider = ({ children }) => {
 
     const json = await res.json();
 
-    /* ---- Tilpas her, hvis jeres backend lægger token/bruger et andet sted ----
-       Vi tjekker de mest almindelige placeringer, så det virker uanset om svaret
-       er { data: { token } } eller { token }. */
-    const newToken =
-      json?.data?.token ??
-      json?.token ??
-      json?.data?.accessToken ??
-      json?.accessToken;
+    const newToken = json?.data?.token;
+
     const newUser = json?.data?.user ?? json?.user ?? null;
     /* ------------------------------------------------------------------------- */
 
