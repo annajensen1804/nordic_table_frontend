@@ -7,30 +7,32 @@
 
 .menuBlock {
     display: block;
+    width: 100%;
+    max-width: 900px;
 }
 
 .punkt {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
     border-bottom: 0.5px solid #916B1C;
-}
-
-.punktLeft, .punktRight {
-    padding: 10px 0;
+    margin-bottom: 10px;
 }
 
 .punktLeft {
-    flex-basis: 80%;
+    padding: 10px 0;
+    padding-right: 20px;
 }
 
 .punktRight {
-    align-self: self-end;
+    white-space: nowrap;
 }
 
 .title {
     display: flex;
     gap: 20px;
-    border-bottom: 1px solid #916B1C;
+    border-bottom: 2px solid #916B1C;
     padding-bottom: 10px;
 
     img {
@@ -40,4 +42,11 @@
 
 p, h2, h3, h4 {
     color: #1A1A1A
+}
+
+.menuBlock ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
 }

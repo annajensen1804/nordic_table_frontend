@@ -2,6 +2,7 @@ import { useLoaderData } from "react-router-dom";
 import Dishes from "../components/dishes/Dishes";
 import Header from "../components/header/Header"
 import BookingSection from "../components/booking/BookingSection";
+import About from "../components/about/About";
 
 const Home = () => {
   const dishes = useLoaderData();
@@ -19,6 +20,7 @@ const Home = () => {
         />
 
         <Dishes dishes={signatureDishes} />
+        <About />
 
         <BookingSection />
       </article>

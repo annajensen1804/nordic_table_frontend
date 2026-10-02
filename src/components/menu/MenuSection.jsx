@@ -29,7 +29,7 @@ const MenuSection = () => {
 
         <div className={styles.menuBlock}>
           <div className={styles.title}>
-            <img src={mainCoursesImg} alt="forreter"></img>
+            <img src={mainCoursesImg} alt="hovedretter"></img>
             <h2>Hovedretter</h2>
           </div>
           <ul>
@@ -41,7 +41,7 @@ const MenuSection = () => {
 
         <div className={styles.menuBlock}>
           <div className={styles.title}>
-            <img src={dessertsImg} alt="forreter"></img>
+            <img src={dessertsImg} alt="desserter"></img>
             <h2>Desserter</h2>
           </div>
           <ul>
